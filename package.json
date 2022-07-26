@@ -6,7 +6,9 @@
   "scripts": {
     "build": "webpack --mode=production",
     "start": "webpack-cli serve --mode development",
-    "lint-fix": "eslint --fix \"./src/**/*.{js,ts}\" && prettier --write \"./src/**/*.{js,ts}\""
+    "lint-fix": "eslint --fix \"./src/**/*.{js,ts}\" && prettier --write \"./src/**/*.{js,ts}\"",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "author": "",
   "license": "ISC",
@@ -20,7 +22,7 @@
     "eslint-plugin-n": "^15.2.4",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.1",
-    "husky": "^8.0.1",
+    "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "ts-loader": "^9.3.1",
