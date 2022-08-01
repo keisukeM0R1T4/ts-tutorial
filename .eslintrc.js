@@ -6,8 +6,8 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended', // TypeScriptでチェックされる項目をLintから除外する設定
+    // 'prettier/@typescript-eslint',
     'prettier', // prettierのextendsは他のextendsより後に記述する
-    'prettier/@typescript-eslint',
   ],
   plugins: ['@typescript-eslint'],
   parser: '@typescript-eslint/parser',
